@@ -1,0 +1,55 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.tabs a {
+  list-style-type: none;
+  display: inline-block;
+  background-color: #fff;
+  border: solid 4px #000;
+  border-radius: 15px;
+  height: 22px;
+  width: 22px;
+}
+
+.tabs > li {
+  display: inline-block;
+}
+
+.tabs {
+  text-align: center;
+  padding: 0;
+  position: relative;
+  top: 19.5em;
+}
+
+.tabs a:hover {
+  background-color: #000;
+}
+
+.images {
+  position: relative;
+}
+
+.zero, .one, .two, .three, .four {
+  position: absolute;
+  display: none;
+}
+
+.zero:target, .one:target, .two:target, .three:target, .four:target {
+  display: block;
+}
